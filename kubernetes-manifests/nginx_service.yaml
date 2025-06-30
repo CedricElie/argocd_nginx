@@ -4,10 +4,10 @@ metadata:
   name: nginx-release-deployment
   namespace: app-nginx
 spec:
+  - type: NodePort
   ports:
     port: 80
     protocol: TCP
     targetPort: 80
   selector:
     app: nginx-release
-  type: NodePort
