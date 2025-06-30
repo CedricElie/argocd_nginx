@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-release-deployment
-  namespace: nginx-helm
+  namespace: nginx
 spec:
   ports:
   - nodePort: 31495
