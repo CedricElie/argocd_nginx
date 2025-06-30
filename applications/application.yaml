@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-2
+  name: app-nginx
 spec:
   destination:
-    namespace: nginx
+    namespace: app-nginx
     server: https://kubernetes.default.svc
   source:
     path: kubernetes-manifests
